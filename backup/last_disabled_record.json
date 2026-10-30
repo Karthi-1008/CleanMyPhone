@@ -1,0 +1,238 @@
+﻿{
+    "DisabledPackages":  [
+                             {
+                                 "ApkPath":  "/system/app/FotaUpdate/FotaUpdate.apk",
+                                 "Package":  "com.adups.fota"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/FotaUpdateReboot/FotaUpdateReboot.apk",
+                                 "Package":  "com.adups.fota.sysoper"
+                             },
+                             {
+                                 "ApkPath":  "/system/vendor/app/RIDLClient/RIDLClient.apk",
+                                 "Package":  "com.qualcomm.qti.RIDL"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/StatisRJIOST/StatisRJIOST.apk",
+                                 "Package":  "com.salestracker.asan"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/Ignite/Ignite.apk",
+                                 "Package":  "com.jio.mobileservices"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/GoogleFeedback/GoogleFeedback.apk",
+                                 "Package":  "com.google.android.feedback"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/FactoryMode/FactoryMode.apk",
+                                 "Package":  "com.android.factorymode"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/FactoryKit/FactoryKit.apk",
+                                 "Package":  "com.qualcomm.factory"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/DisplaySDKSample/DisplaySDKSample.apk",
+                                 "Package":  "com.qualcomm.snapdragon.sample"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/shutdownlistener/shutdownlistener.apk",
+                                 "Package":  "com.qualcomm.shutdownlistner"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/com.qualcomm.qti.auth.fidocryptosample/com.qualcomm.qti.auth.fidocryptosample.apk",
+                                 "Package":  "com.qualcomm.qti.auth.fidocryptosample"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/SampleAuthenticatorService/SampleAuthenticatorService.apk",
+                                 "Package":  "com.qualcomm.qti.auth.sampleauthenticatorservice"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/SecureSampleAuthService/SecureSampleAuthService.apk",
+                                 "Package":  "com.qualcomm.qti.auth.securesampleauthservice"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/EngineerTool/EngineerTool.apk",
+                                 "Package":  "com.qualcomm.qti.engineertool"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/EngineerToolOp/EngineerToolOp.apk",
+                                 "Package":  "com.qualcomm.qti.engineertool.operation"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/BTTestApp/BTTestApp.apk",
+                                 "Package":  "org.codeaurora.bluetooth.bttestapp"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/AGPSTestMode/AGPSTestMode.apk",
+                                 "Package":  "com.qualcomm.agpstestmode"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/AntiTheftDemo/AntiTheftDemo.apk",
+                                 "Package":  "com.qti.antitheftdemo"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/Mp3test/Mp3test.apk",
+                                 "Package":  "com.uniscope.mp3test"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PreventMode/PreventMode.apk",
+                                 "Package":  "com.uniscope.preventmode"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/MonitorBattery/MonitorBattery.apk",
+                                 "Package":  "com.uniscope.monitorbattery"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/SecProtect/SecProtect.apk",
+                                 "Package":  "com.qapp.secprotect"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/OmaDrmEngineDemo/OmaDrmEngineDemo.apk",
+                                 "Package":  "com.oma.drm.demo"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/DeviceInfo/DeviceInfo.apk",
+                                 "Package":  "com.android.qrd.engineeringmode"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/ConfigurationClientDemo/ConfigurationClientDemo.apk",
+                                 "Package":  "com.wdstechnology.android.kryten.demo"
+                             },
+                             {
+                                 "ApkPath":  "/system/vendor/app/NativeAudioLatency/NativeAudioLatency.apk",
+                                 "Package":  "com.android.nativeaudiolatency"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/QDCMMobileApp/QDCMMobileApp.apk",
+                                 "Package":  "com.qualcomm.qti.snapdragon.qdcm_mobile"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/LunarInfoProvider/LunarInfoProvider.apk",
+                                 "Package":  "com.qualcomm.qti.lunarinfo"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/Galaxy4/Galaxy4.apk",
+                                 "Package":  "com.android.galaxy4"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/HoloSpiralWallpaper/HoloSpiralWallpaper.apk",
+                                 "Package":  "com.android.wallpaper.holospiral"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PhaseBeam/PhaseBeam.apk",
+                                 "Package":  "com.android.phasebeam"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/NoiseField/NoiseField.apk",
+                                 "Package":  "com.android.noisefield"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/LiveWallpapersPicker/LiveWallpapersPicker.apk",
+                                 "Package":  "com.android.wallpaper.livepicker"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/BasicDreams/BasicDreams.apk",
+                                 "Package":  "com.android.dreams.basic"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/AntHalService/AntHalService.apk",
+                                 "Package":  "com.dsi.ant.server"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PrintSpooler/PrintSpooler.apk",
+                                 "Package":  "com.android.printspooler"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/QuickSearchBox/QuickSearchBox.apk",
+                                 "Package":  "com.android.quicksearchbox"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/Browser/Browser.apk",
+                                 "Package":  "com.android.browser"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/Email/Email.apk",
+                                 "Package":  "com.android.email"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/Exchange2/Exchange2.apk",
+                                 "Package":  "com.android.exchange"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/ConfigurationClient/ConfigurationClient.apk",
+                                 "Package":  "com.wdstechnology.android.kryten"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/OmaDownload/OmaDownload.apk",
+                                 "Package":  "com.qrd.omadownload"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/TelephonyExtVodafonePack/TelephonyExtVodafonePack.apk",
+                                 "Package":  "com.qualcomm.qti.telephony.vodafonepack"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/CarrierCacheService/CarrierCacheService.apk",
+                                 "Package":  "com.qualcomm.qti.accesscache"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/CarrierLoadService/CarrierLoadService.apk",
+                                 "Package":  "com.qualcomm.qti.loadcarrier"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/CarrierConfigure/CarrierConfigure.apk",
+                                 "Package":  "com.qualcomm.qti.carrierconfigure"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/Tag/Tag.apk",
+                                 "Package":  "com.android.apps.tag"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/BookmarkProvider/BookmarkProvider.apk",
+                                 "Package":  "com.android.bookmarkprovider"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PartnerBookmarksProvider/PartnerBookmarksProvider.apk",
+                                 "Package":  "com.android.providers.partnerbookmarks"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/VideoPlayer/VideoPlayer.apk",
+                                 "Package":  "com.sec.android.videoplayer"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PicoTts/PicoTts.apk",
+                                 "Package":  "com.svox.pico"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/TimerSwitch/TimerSwitch.apk",
+                                 "Package":  "com.android.timerswitch"
+                             },
+                             {
+                                 "ApkPath":  "/system/vendor/app/PowerOnAlert/PowerOnAlert.apk",
+                                 "Package":  "com.android.poweronalert"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/PowerOffHandlerApp/PowerOffHandlerApp.apk",
+                                 "Package":  "com.android.poweroffhandlerapp"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk",
+                                 "Package":  "com.google.android.onetimeinitializer"
+                             },
+                             {
+                                 "ApkPath":  "/system/priv-app/GooglePartnerSetup/GooglePartnerSetup.apk",
+                                 "Package":  "com.google.android.partnersetup"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/WAPPushManager/WAPPushManager.apk",
+                                 "Package":  "com.android.smspush"
+                             },
+                             {
+                                 "ApkPath":  "/system/app/HTMLViewer/HTMLViewer.apk",
+                                 "Package":  "com.android.htmlviewer"
+                             }
+                         ],
+    "Timestamp":  "2026-10-28T23:10:19.3121567+05:30",
+    "Device":  "192.168.0.7:5555"
+}

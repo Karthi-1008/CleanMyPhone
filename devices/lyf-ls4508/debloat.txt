@@ -1,0 +1,81 @@
+# ==============================================================================
+# CleanMyPhone - Debloat List for LYF Flame 8 (LS-4508)
+# Android 6.0.1 (API 23) - Qualcomm Snapdragon 210 MSM8909
+# 
+# Safe to disable with: .\tools\disable.ps1 -List .\devices\lyf-ls4508\debloat.txt
+# Undo anytime with:    .\tools\restore.ps1 -List .\devices\lyf-ls4508\debloat.txt
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. SPYWARE, BACKDOORS & TELEMETRY (HIGH PRIORITY)
+# ------------------------------------------------------------------------------
+com.adups.fota                     # ADUPS FOTA firmware spyware (CVE documented, transmits logs/SMS)
+com.adups.fota.sysoper             # ADUPS system operator background daemon
+com.qualcomm.qti.RIDL              # Qualcomm Robust Issue Detection and Logging (constant background telemetry)
+com.salestracker.asan              # Retail demo / sales tracking spyware
+com.jio.mobileservices             # Jio background carrier telemetry
+com.google.android.feedback        # Google feedback crash reporting service
+
+# ------------------------------------------------------------------------------
+# 2. QUALCOMM FACTORY & ENGINEERING TEST APPS (UNUSED RUNTIME LEAKS)
+# ------------------------------------------------------------------------------
+com.android.factorymode            # Factory test mode
+com.qualcomm.factory               # Qualcomm hardware factory test
+com.qualcomm.snapdragon.sample     # Qualcomm Snapdragon display sample app
+com.qualcomm.shutdownlistner       # Shutdown test listener sample
+com.qualcomm.qti.auth.fidocryptosample       # Qualcomm FIDO sample auth
+com.qualcomm.qti.auth.sampleauthenticatorservice # Qualcomm sample authenticator
+com.qualcomm.qti.auth.securesampleauthservice    # Qualcomm secure sample authenticator
+com.qualcomm.qti.engineertool      # Qualcomm internal engineering diagnostics
+com.qualcomm.qti.engineertool.operation # Qualcomm engineer tool background operator
+org.codeaurora.bluetooth.bttestapp # CodeAurora Bluetooth test suite
+com.qualcomm.agpstestmode          # Qualcomm A-GPS test mode app
+com.qti.antitheftdemo              # Anti-theft demonstration APK
+com.uniscope.mp3test               # Uniscope audio factory test app
+com.uniscope.preventmode           # Uniscope accidental touch daemon (wakes CPU)
+com.uniscope.monitorbattery        # Uniscope diagnostic battery monitor
+com.qapp.secprotect                # Uniscope test security protection app
+com.oma.drm.demo                   # OMA DRM demo client
+com.android.qrd.engineeringmode    # Qualcomm Reference Design engineering menu
+com.wdstechnology.android.kryten.demo # WDS configuration demo app
+com.android.nativeaudiolatency     # Qualcomm native audio latency test APK
+com.qualcomm.qti.snapdragon.qdcm_mobile # Qualcomm display calibration mobile tool
+com.qualcomm.qti.lunarinfo         # Qualcomm Lunar calendar provider
+
+# ------------------------------------------------------------------------------
+# 3. LIVE WALLPAPERS & VISUAL BLOAT (HEAVILY CONSUMES 1GB RAM)
+# ------------------------------------------------------------------------------
+com.android.galaxy4                # Galaxy4 Live Wallpaper
+com.android.wallpaper.holospiral   # HoloSpiral Live Wallpaper
+com.android.phasebeam              # PhaseBeam Live Wallpaper
+com.android.noisefield             # NoiseField Live Wallpaper
+com.android.wallpaper.livepicker   # Live Wallpaper Picker
+com.android.dreams.basic           # Basic Daydreams / Screensavers
+
+# ------------------------------------------------------------------------------
+# 4. UNUSED SERVICES, OBSOLETE APPS & CARRIER JUNK
+# ------------------------------------------------------------------------------
+com.dsi.ant.server                 # ANT+ wireless server (fitness sensors, phone lacks ANT)
+com.android.printspooler           # Print spooler background service
+com.android.quicksearchbox         # Legacy AOSP search box
+com.android.browser                # Stock AOSP browser (user uses fast Via browser)
+com.android.email                  # Legacy AOSP email client
+com.android.exchange               # Exchange services sync
+com.wdstechnology.android.kryten   # WDS Carrier auto-config daemon
+com.qrd.omadownload                # OMA Download manager
+com.qualcomm.qti.telephony.vodafonepack # Vodafone SIM toolkit bundle on Jio device
+com.qualcomm.qti.accesscache       # Carrier access cache
+com.qualcomm.qti.loadcarrier       # Carrier configuration loader
+com.qualcomm.qti.carrierconfigure  # Carrier auto-configurator
+com.android.apps.tag               # NFC Tag reader (phone hardware has NO NFC)
+com.android.bookmarkprovider       # Browser bookmarks provider
+com.android.providers.partnerbookmarks # Partner bookmarks provider
+com.sec.android.videoplayer        # Legacy stock video player (User confirmed disable)
+com.svox.pico                      # Outdated Pico TTS engine (Google TTS is installed)
+com.android.timerswitch            # Scheduled power on/off timer
+com.android.poweronalert           # Power-on chime/alert app
+com.android.poweroffhandlerapp     # Power-off test handler
+com.google.android.onetimeinitializer # Obsolete 2016 first-boot setup initializer
+com.google.android.partnersetup    # Obsolete 2016 partner setup daemon
+com.android.smspush                # Obsolete 2G WAP Push manager
+com.android.htmlviewer             # Obsolete legacy HTML viewer

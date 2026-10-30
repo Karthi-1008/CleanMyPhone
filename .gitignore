@@ -1,0 +1,16 @@
+# Gradle & Build caches
+.gradle/
+**/build/
+**/.gradle/
+launcher/.gradle/
+launcher/build/
+launcher/app/build/
+
+# Local configuration & environment
+local.properties
+launcher/local.properties
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+*.log

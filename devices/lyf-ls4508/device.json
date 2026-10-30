@@ -1,0 +1,32 @@
+{
+  "brand": "LYF",
+  "manufacturer": "LYF",
+  "model": "LS-4508",
+  "market_name": "LYF Flame 8",
+  "board": "msm8909",
+  "chipset": "Qualcomm Snapdragon 210 MSM8909 (Quad-core 1.1 GHz Cortex-A7)",
+  "gpu": "Adreno 304",
+  "ram_mb": 920,
+  "internal_storage_gb": 8,
+  "display": {
+    "resolution": "480x854",
+    "density_dpi": 240,
+    "ratio": "16:9"
+  },
+  "android": {
+    "version": "6.0.1",
+    "codename": "Marshmallow",
+    "sdk_level": 23,
+    "security_patch": "2016-10-01",
+    "kernel": "3.10.49"
+  },
+  "default_launcher": "com.android.launcher",
+  "installed_packages_count": 162,
+  "currently_disabled": [
+    "com.google.android.googlequicksearchbox",
+    "com.google.android.gm",
+    "com.google.android.apps.maps",
+    "com.google.android.youtube",
+    "com.android.chrome"
+  ]
+}
