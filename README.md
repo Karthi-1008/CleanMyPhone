@@ -1,13 +1,13 @@
-# 📱 CleanMyPhone — From E-Waste to Smart TV Webcam & Motion Gaming Console
+# 📱 CleanMyPhone — From E-Waste to Smart TV Webcam & High-Performance Phone
 
 [![Android Version](https://img.shields.io/badge/Android-6.0.1%20Marshmallow%20(API%2023)-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com/)
 [![Qualcomm Chipset](https://img.shields.io/badge/SoC-Snapdragon%20210%20MSM8909-red?style=for-the-badge&logo=qualcomm&logoColor=white)](https://www.qualcomm.com/)
-[![OpenCV Computer Vision](https://img.shields.io/badge/Computer%20Vision-OpenCV%204-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Zero Root Required](https://img.shields.io/badge/Root-Not%20Required%20(Safe%20ADB)-success?style=for-the-badge)](tools/)
+[![Zero Cloud Dependency](https://img.shields.io/badge/Privacy-100%25%20Local%20Wi--Fi-007AFF?style=for-the-badge)](launcher/)
 
 > **A complete transformation project:**
-> We took a discarded, severely lagging 2016 Qualcomm Android smartphone with only **~18 MB of free RAM** and active Chinese spyware, completely debloated and optimized its OS, built a custom **Pitch-Black OLED Launcher with One-Tap RAM Cleaner**, and engineered an **OpenCV-powered physical body motion game** and **ultra-low-latency wireless TV webcam**.
+> We took a discarded, severely lagging 2016 Qualcomm Android smartphone with only **~18 MB of free RAM** and active Chinese spyware, completely debloated and optimized its OS, built a custom **Pitch-Black OLED Launcher with One-Tap RAM Cleaner**, and engineered an **ultra-low-latency wireless TV webcam server** with battery-saving dim mode.
 
 ---
 
@@ -19,8 +19,7 @@
    - [Phase 1: Security Audit & Eradicating Spyware](#phase-1-security-audit--eradicating-spyware)
    - [Phase 2: Deep Kernel, GPU & System Tuning](#phase-2-deep-kernel-gpu--system-tuning)
    - [Phase 3: Custom Pitch-Black OLED Launcher & AdBlocker](#phase-3-custom-pitch-black-oled-launcher--adblocker)
-   - [Phase 4: OpenCV Motion Runner Game Engine](#phase-4-opencv-motion-runner-game-engine)
-   - [Phase 5: Real-Time TV Cast & Wireless Webcam](#phase-5-real-time-tv-cast--wireless-webcam)
+   - [Phase 4: Real-Time Low-Latency TV Webcam Server](#phase-4-real-time-low-latency-tv-webcam-server)
 5. [Overall Achievements](#-overall-achievements)
 6. [Repository Structure & Deliverables](#-repository-structure--deliverables)
 7. [Quick Start & Usage Instructions](#-quick-start--usage-instructions)
@@ -61,21 +60,12 @@ OS: Android 6.0.1 Marshmallow (Security patch: Oct 2016)
 
 ---
 
-### 2. Physical Motion Runner Game (OpenCV Powered)
+### 2. Wireless TV Streaming & Core Services
 
-| Camera Motion Tracking HUD | Player Jump Detection | In-Game Speed & Obstacle Dodge |
+| TV Screen Casting & Control | Preserved Native Media Services | Lightweight Native Gallery |
 | :---: | :---: | :---: |
-| ![Motion Tracking](game_screenshot.png) | ![Jump Action](game_screenshot_jump.png) | ![Game Action](game_screenshot3.png) |
-| *Live OpenCV PIP silhouette showing player position, active lane tracking & gesture detection* | *Physical real-world jumps tracked by camera to jump over obstacles in real-time* | *Hardware Canvas rendering at 60 FPS with particle effects, shields, and retro sound FX* |
-
----
-
-### 3. Big Screen TV Casting & Wireless Webcam
-
-| Motion Game Streamed Live on TV | TV Gameplay & Spectator View | TV Cast Control Menu |
-| :---: | :---: | :---: |
-| ![TV Game Stream](game_tv_screen.png) | ![TV Screen Action](game_tv_screen2.png) | ![Cast Menu](cast_menu.png) |
-| *Zero-latency Wi-Fi HTTP MJPEG stream at 30 FPS playing directly on the TV browser* | *Turn your living room into an interactive motion gaming arena using just the phone* | *Instant IP streaming endpoints with Dim Screen mode to eliminate heating* |
+| ![Cast Menu](cast_menu.png) | ![Music Service](music_test.png) | ![Gallery Service](gallery_test.png) |
+| *Instant TV webcam streaming over Wi-Fi with Dim Screen mode* | *Stock Snapdragon hardware audio decoding verified intact* | *Snappy local photo & video viewing with zero cloud overhead* |
 
 ---
 
@@ -91,9 +81,8 @@ OS: Android 6.0.1 Marshmallow (Security patch: Oct 2016)
 | **Launcher Features** | Cluttered icons, no hardware monitoring, no quick toggles | **Digital Clock, live RAM & Storage meters, 1-Tap Boost, 4 quick toggles, dock** | Full control center on the home screen |
 | **Standby Battery Drain** | ~4–7% per hour (Wi-Fi/BLE scans active 24/7) | **< 0.8% per hour** (Aggressive Doze mode + scans disabled) | Standby battery life multiplied by **4x** |
 | **Ad Blocking & Privacy** | System-wide ads in apps and browser | **Built-in Local AdBlock VPN (`AdBlockService`)** + Via Browser ad blocker | Faster page loads; zero banner ads |
-| **Device Purpose & Utility** | Forgotten drawer e-waste | **Interactive Motion Gaming Console + Wireless HD TV Webcam** | Complete second life without spending a dollar |
-| **Motion Game Capability** | None (could barely run basic apps) | **OpenCV 4 MOG2 gesture engine + 60 FPS endless runner** | Full physical body tracking (Jump, Slide, 3-Lane Run) |
-| **Wireless Streaming** | None | **Sub-50ms HTTP MJPEG 30 FPS stream** on Port 8080/8081 | Works on any TV, PC, tablet, or browser over Wi-Fi |
+| **Device Purpose & Utility** | Forgotten drawer e-waste | **Ultra-Low-Latency Wireless HD TV Webcam + Clean Daily Phone** | Complete second life without spending a dollar |
+| **Wireless TV Streaming** | None | **Sub-50ms HTTP MJPEG 30 FPS stream** on Port 8080 with Dim Mode | Works on any Smart TV, PC, tablet, or browser over local Wi-Fi |
 | **Safety & Reversibility** | Risky root flashing, high risk of hard brick | **100% Reversible via user-space ADB** (`pm uninstall -k --user 0`) | Read-only `/system` preserved; factory restore in 1 click |
 
 ---
@@ -166,7 +155,7 @@ Configured persistent system settings over ADB to maximize the Snapdragon 210 MS
 ### Phase 3: Custom Pitch-Black OLED Launcher & AdBlocker
 
 Built from scratch in Java with AndroidX:
-* **Pitch-Black Palette (`#090B10`)**: Low power consumption on LCD screens and true black on OLEDs.
+* **Pitch-Black Palette (`#090B10`)**: Minimalist, modern dark mode with frosted glass cards.
 * **Live System Metrics**:
   - `⚡ RAM: ... MB Free`: Real-time query of `ActivityManager.MemoryInfo`.
   - `💾 Storage: ... MB Free`: Real-time query of `StatFs` on `/data`.
@@ -182,39 +171,22 @@ Built from scratch in Java with AndroidX:
 
 ---
 
-### Phase 4: OpenCV Motion Runner Game Engine
+### Phase 4: Real-Time Low-Latency TV Webcam Server
 
-Rather than letting the phone sit idle, we transformed it into a physical interactive motion gaming system using **OpenCV 4**:
+Turn your old phone into a dedicated high-performance wireless webcam for your Smart TV, PC, or laptop:
 
-* **Computer Vision Pipeline (`OpenCvMotionTracker.java`)**:
-  1. Downsamples camera frames to `320 × 240` NV21 format for real-time processing.
-  2. Runs **MOG2 Background Subtraction** (`BackgroundSubtractorMOG2`) to isolate the player from the background.
-  3. Applies morphological dilation and erosion kernels to eliminate lighting noise and shadows.
-  4. Computes spatial moments (`Moments`) and extracts the bounding contour of the human body.
-* **Physical Gesture Recognition**:
-  - **Left / Center / Right Lane Switching**: Player physically leans or steps left/right in front of the camera.
-  - **Jump Detection**: Detects rapid vertical centroid upward displacement ($\Delta y < -35\text{px}$) to trigger runner jumps.
-  - **Duck / Slide Detection**: Detects crouching motion or downward centroid shift to trigger runner slides under barriers.
-* **Game Features (`GameView.java`)**:
-  - 60 FPS hardware Canvas game loop.
-  - Parallax scrolling background with obstacles (low barriers to jump, high overhangs to slide).
-  - Collectible gold coins, extra life hearts, and invincibility shield power-ups.
-  - Retro sound effects (`SoundManager.java`) using Android `SoundPool`.
-  - Picture-in-Picture (PiP) silhouette camera HUD displaying tracking state.
-
----
-
-### Phase 5: Real-Time TV Cast & Wireless Webcam
-
-* **Embedded MJPEG Streaming Server (`TvGameServer.java` & `TvCamServer.java`)**:
-  - Listens on `http://<PHONE_IP>:8080/video` (TV Webcam) and `http://<PHONE_IP>:8081` (TV Game Mirror).
-  - Encodes hardware NV21 frames into compressed JPEG byte streams.
-  - Multipart boundary delivery (`multipart/x-mixed-replace; boundary=--frame`) supported natively by any TV web browser, Chrome, Safari, Firefox, VLC, and OpenCV.
+* **Embedded MJPEG Streaming Server (`TvCamActivity.java` & `TvCamServer.java`)**:
+  - Listens on `http://<PHONE_IP>:8080/video` (Direct stream) and `http://<PHONE_IP>:8080/` (Full web viewer).
+  - Encodes Qualcomm hardware NV21 frames directly into high-quality JPEG byte streams.
+  - Native multipart boundary delivery (`multipart/x-mixed-replace; boundary=--frame`) supported by any TV browser, Chrome, Safari, Firefox, VLC, and OBS.
 * **Sub-50ms Latency**:
-  - Pure local network Wi-Fi transmission. Zero cloud relays, zero accounts, zero subscriptions.
+  - Pure local network Wi-Fi transmission. Zero cloud relays, zero external servers, zero subscriptions.
 * **"🌙 Dim" Screen Mode**:
-  - When used as a webcam or TV game sensor, tapping "Dim" turns the phone's screen completely black with a low-brightness clock.
-  - Eliminates screen heat, saves battery, and prevents screen burn-in during hours of streaming.
+  - Tapping "Dim" turns the phone's screen completely black with a low-brightness clock while keeping the camera and server active.
+  - Eliminates display heating, saves battery, and prevents screen burn-in during hours of streaming.
+* **Quick Controls**:
+  - Flip between Front and Rear camera.
+  - Toggle the LED camera flashlight for low-light environments.
 
 ---
 
@@ -223,8 +195,8 @@ Rather than letting the phone sit idle, we transformed it into a physical intera
 1. **E-Waste Prevention**: Successfully rescued a 10-year-old budget phone (LYF Flame 8) and elevated it to a high-utility smart device.
 2. **From 18 MB to 300+ MB RAM Buffer**: Liberated the device from permanent memory thrashing, enabling smooth multitasking.
 3. **Enterprise-Grade Privacy**: Eradicated the CVE-documented ADUPS spyware backdoor, Qualcomm telemetry, and carrier trackers.
-4. **Physical Interactive Gaming Console**: Built an entire OpenCV-based body-tracking game running smoothly on a low-end Snapdragon 210.
-5. **Universal Big-Screen TV Mirroring**: Zero-app browser casting to any Smart TV over local Wi-Fi with sub-50ms latency.
+4. **Dedicated Wireless HD TV Webcam**: Zero-app browser casting to any Smart TV or computer over local Wi-Fi with sub-50ms latency.
+5. **Ultra-Snappy Daily Experience**: Pitch-Black OLED UI, instant window animations, 1-tap RAM cleaner, and built-in ad blocking.
 6. **100% Non-Destructive**: Every optimization, debloat, and tuning can be undone with a single script call.
 
 ---
@@ -234,7 +206,6 @@ Rather than letting the phone sit idle, we transformed it into a physical intera
 ```
 CleanMyPhone/
 ├── CleanMyPhone-Launcher.apk      # Compiled standalone custom OLED Launcher APK
-├── CleanMyPhone-MotionRunner.apk  # Compiled standalone OpenCV Motion Game APK
 ├── CleanMyPhone-TVCam.apk         # Compiled standalone TV Webcam Server APK
 ├── README.md                      # Comprehensive project documentation
 ├── LICENSE                        # MIT License
@@ -255,23 +226,15 @@ CleanMyPhone/
 │       ├── debloat.txt            # Complete list of 58 debloated packages
 │       └── recommendations.md     # Hardware-specific performance recommendations
 │
-├── launcher/                      # Full Android Studio Java/AndroidX source code
+├── launcher/                      # Android Studio Java/AndroidX source code
 │   ├── app/src/main/
 │   │   ├── AndroidManifest.xml    # App manifest, permissions, and activities
-│   │   ├── assets/game/           # Sprites, audio FX, music tracks
 │   │   ├── java/com/cleanmyphone/launcher/
 │   │   │   ├── MainActivity.java      # Launcher home screen & live hardware meters
 │   │   │   ├── TvCamActivity.java     # TV Webcam controller with Dim mode
 │   │   │   ├── TvCamServer.java       # HTTP MJPEG video stream server (Port 8080)
-│   │   │   ├── adblock/
-│   │   │   │   └── AdBlockService.java # Local DNS-intercept VPN ad blocker
-│   │   │   ├── game/
-│   │   │   │   ├── MotionGameActivity.java # Motion runner controller
-│   │   │   │   ├── GameView.java           # 60 FPS Canvas rendering engine
-│   │   │   │   ├── TvGameServer.java       # TV Cast streaming server (Port 8081)
-│   │   │   │   └── SoundManager.java       # SoundPool low-latency audio
-│   │   │   └── opencv/
-│   │   │       └── OpenCvMotionTracker.java # MOG2 computer vision tracking
+│   │   │   └── adblock/
+│   │   │       └── AdBlockService.java # Local DNS-intercept VPN ad blocker
 │   │   └── res/                   # Layouts, vector drawables, OLED dark theme
 │   └── build.gradle               # Gradle build configuration
 │
@@ -282,7 +245,6 @@ CleanMyPhone/
 │   ├── tv-webcam.ps1              # Automated launcher for TV webcam feed
 │   └── open-on-tv.ps1             # Remote TV browser launch automation
 │
-├── Games/ & GameAssets/           # High-resolution original art, sprites & audio
 └── downloads/                     # Supporting open-source APKs (DNS66, F-Droid)
 ```
 
@@ -302,28 +264,22 @@ Safely disable all 58 bloatware, spyware, and factory test packages:
 .\tools\disable.ps1 -PhoneHost 192.168.0.9:5555 -List .\devices\lyf-ls4508\debloat.txt
 ```
 
-### 3. Installing the CleanMyPhone APKs
-Install the launcher, motion runner, or webcam app directly:
+### 3. Installing the CleanMyPhone Launcher
+Install the launcher directly on the device:
 ```powershell
 adb install -r CleanMyPhone-Launcher.apk
 ```
 
-### 4. Using the TV Webcam
+### 4. Running the TV Webcam
 1. Tap **`📹 TV Webcam`** on the phone home screen.
 2. Note your phone's Wi-Fi IP (e.g. `http://192.168.0.9:8080`).
-3. Open any browser on your Smart TV or PC and navigate to `http://192.168.0.9:8080`.
-4. *(Optional)* Tap **`🌙 Dim`** to turn off the phone screen while keeping the camera stream alive.
+3. Open any web browser on your Smart TV or PC and navigate to `http://192.168.0.9:8080`.
+4. *(Optional)* Tap **`🌙 Dim`** on the phone to turn off the screen display while streaming continues.
 
-### 5. Playing the Motion Runner Game
-1. Prop your phone up in landscape mode facing you (~1.5 to 2.5 meters away).
-2. Tap **`🏃 Motion Runner`** on the home screen.
-3. Stand in view of the camera until the PiP HUD shows you tracked in green.
-4. Open `http://192.168.0.9:8081` on your Smart TV browser to see the game mirrored on the big screen!
-5. **Controls**:
-   - **Lean / Step Left**: Move to the left lane.
-   - **Lean / Step Right**: Move to the right lane.
-   - **Jump in Real Life**: Jump over ground obstacles.
-   - **Crouch / Duck**: Slide under high overhangs.
+Alternatively, launch it automatically from your PC using the included tool:
+```powershell
+.\tools\tv-webcam.ps1 -TvHost <YOUR_TV_IP>:5555
+```
 
 ---
 
